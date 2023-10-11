@@ -1,0 +1,31 @@
+package com.basics;
+
+import java.util.Scanner;
+
+public class Ex3 {
+         public static void main(String[] args) {
+        	 
+        	 //Min and max in an array
+        	 
+			//int[] array= {1,3,5,7,8};
+        	Scanner s= new Scanner(System.in);
+        	System.out.println("Enter how many numbers");
+			int n=s.nextInt();
+        	int[] arr= new int[n];
+			
+			for(int i=0;i<n;i++) {
+			     arr[i]=s.nextInt();
+			}
+			
+			int max=0, min=0;
+			for(int i=0;i<n-1;i++) {
+				if(max<arr[i]) {
+					max=arr[i];
+				}
+				if(min>arr[i]) {
+					min=arr[i];
+				}
+			}
+			System.out.println("Min "+ min +" Max "+max);
+		}
+}
