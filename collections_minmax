@@ -1,0 +1,21 @@
+class Compute 
+{
+    static Pair getMinMax(long a[], long n)  
+    {
+       
+        ArrayList<Long> minMax = new ArrayList<>();
+      
+        
+        for(int i=0;i<a.length;i++){
+            long val = a[i];
+            minMax.add(val);
+        }
+        
+        long min = Collections.min(minMax);
+         long max = Collections.max(minMax);
+        
+          Pair p = new Pair(min, max);
+        
+        return p;
+    }
+}
